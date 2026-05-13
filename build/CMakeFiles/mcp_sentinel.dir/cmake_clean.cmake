@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o"
   "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o.d"
+  "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o"
+  "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/main.cpp.o"
   "CMakeFiles/mcp_sentinel.dir/src/main.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o"

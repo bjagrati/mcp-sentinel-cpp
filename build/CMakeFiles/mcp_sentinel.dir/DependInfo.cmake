@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/approval_manager.cpp" "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/audit_logger.cpp" "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o.d"
+  "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/config.cpp" "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/main.cpp" "CMakeFiles/mcp_sentinel.dir/src/main.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/main.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/policy_engine.cpp" "CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/rate_limiter.cpp" "CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o.d"

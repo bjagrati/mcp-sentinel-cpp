@@ -787,6 +787,7 @@ CMakeFiles/mcp_sentinel.dir/src/main.cpp.o: \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/audit_logger.h \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/approval_manager.h \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/server.h \
+  /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/config.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \

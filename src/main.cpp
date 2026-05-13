@@ -6,15 +6,18 @@
 #include "audit_logger.h"
 #include "approval_manager.h"
 #include "server.h"
+#include "config.h"
 
 #include <iostream>
 
 int main() {
+    Config config = ConfigLoader::load();
+
     ToolRegistry toolRegistry;
     PolicyEngine policyEngine;
     Redactor redactor;
     RateLimiter rateLimiter(3, 60);
-    AuditLogger auditLogger("audit.log");
+    AuditLogger auditLogger(config.auditLogPath);
     ApprovalManager approvalManager;
 
     Tool refundTool;
@@ -33,6 +36,9 @@ int main() {
 
     policyEngine.addPolicy(supportPolicy);
 
+    std::cout << "MCP Sentinel C++ starting..." << std::endl;
+    std::cout << "Port: " << config.port << std::endl;
+    std::cout << "Audit log path: " << config.auditLogPath << std::endl;
     std::cout << "Seeded default tool: refund_payment" << std::endl;
     std::cout << "Seeded default policy: support_agent can refund up to 2500" << std::endl;
 
@@ -45,7 +51,7 @@ int main() {
         approvalManager
     );
 
-    server.start(8080);
+    server.start(config.port);
 
     return 0;
 }
