@@ -242,6 +242,30 @@ src/audit_logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.s
 .PHONY : src/audit_logger.cpp.s
 
+src/config.o: src/config.cpp.o
+.PHONY : src/config.o
+
+# target to build an object file
+src/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/config.cpp.o
+.PHONY : src/config.cpp.o
+
+src/config.i: src/config.cpp.i
+.PHONY : src/config.i
+
+# target to preprocess a source file
+src/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/config.cpp.i
+.PHONY : src/config.cpp.i
+
+src/config.s: src/config.cpp.s
+.PHONY : src/config.s
+
+# target to generate assembly for a file
+src/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/config.cpp.s
+.PHONY : src/config.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -407,6 +431,9 @@ help:
 	@echo "... src/audit_logger.o"
 	@echo "... src/audit_logger.i"
 	@echo "... src/audit_logger.s"
+	@echo "... src/config.o"
+	@echo "... src/config.i"
+	@echo "... src/config.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

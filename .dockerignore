@@ -1,0 +1,7 @@
+build
+.git
+.gitignore
+logs
+audit.log
+.DS_Store
+README.old.md

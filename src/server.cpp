@@ -387,8 +387,8 @@ void Server::start(int port) {
         });
     });
 
-    server.Get("/audit-logs", [](const httplib::Request&, httplib::Response& res) {
-        std::ifstream in("audit.log");
+        server.Get("/audit-logs", [this](const httplib::Request&, httplib::Response& res) {
+        std::ifstream in(auditLogger_.getFilePath());
 
         if (!in.is_open()) {
             sendJson(res, 200, {
@@ -402,7 +402,11 @@ void Server::start(int port) {
 
         while (std::getline(in, line)) {
             if (!line.empty()) {
-                logs.push_back(line);
+                try {
+                    logs.push_back(json::parse(line));
+                } catch (...) {
+                    logs.push_back(line);
+                }
             }
         }
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "models.h"
+
 #include <string>
 #include <mutex>
 
@@ -10,7 +11,9 @@ public:
 
     void log(const AuditEvent& event);
 
+    std::string getFilePath() const;
+
 private:
     std::string filePath_;
-    std::mutex mutex_;
+    mutable std::mutex mutex_;
 };

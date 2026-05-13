@@ -27,3 +27,10 @@ A support agent asks an AI agent to call:
 
 ```text
 refund_payment
+
+## Run with Docker
+
+Build and run:
+
+```bash
+docker compose up --build
