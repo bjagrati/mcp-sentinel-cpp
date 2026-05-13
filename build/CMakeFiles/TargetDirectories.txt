@@ -1,0 +1,3 @@
+/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles/mcp_sentinel.dir
+/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles/edit_cache.dir
+/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles/rebuild_cache.dir
