@@ -1,45 +1,44 @@
 # MCP Sentinel C++
 
-MCP Sentinel C++ is a high-performance C++ control-plane gateway for securing AI agent and MCP-style tool execution.
+A high-performance C++ gateway for securing AI agent and MCP-style tool execution using policy evaluation, RBAC, rate limiting, redaction, approval workflows, and audit logging.
 
-Modern AI agents can call external tools such as payment systems, databases, ticketing systems, deployment systems, and customer-management platforms. In enterprise environments, unrestricted tool execution is dangerous.
+---
 
-This project explores how a backend gateway can evaluate every AI tool call before execution using policy rules, role-based access control, rate limits, sensitive-data redaction, approval workflows, and audit logging.
+## What This Project Does
 
-## Phase 1: Core Logic
+Modern AI agents can call external tools such as payment systems, databases, ticketing systems, deployment systems, and customer-management platforms.
 
-This first version is intentionally in-memory and does not use HTTP, databases, Redis, or external services yet.
+That creates a serious backend/security problem:
 
-It includes:
+> Should an AI agent be allowed to execute this tool call?
 
-- Tool registry
-- Policy engine
-- Role-based access control
-- Amount-based policy checks
-- Sensitive-data redaction
-- In-memory rate limiter
-- Human approval workflow
-- Audit logging to file
+MCP Sentinel acts as a security control plane between an AI agent and enterprise tools.
 
-## Example Scenario
+Before a tool call is allowed, the gateway evaluates:
 
-A support agent asks an AI agent to call:
+- Does the tool exist?
+- Is this user role allowed to call it?
+- Does the request exceed a policy limit?
+- Is the tool high-risk?
+- Should a human approve it first?
+- Are sensitive fields being exposed?
+- Has the user exceeded rate limits?
+- Should this decision be logged for auditability?
 
-```text
-refund_payment
+---
 
-## Run with Docker
+## Why This Is an AI Infrastructure Project
 
-Build and run:
+This is not an ML model training project.
 
-```bash
-docker compose up --build
+The goal is to demonstrate the backend infrastructure needed to safely deploy AI agents in real enterprise environments.
 
-## Phase 4: AI Agent Prompt Simulator
-
-MCP Sentinel now includes an AI-agent simulation layer.
-
-Instead of calling the gateway directly with structured JSON, a user can send a natural language prompt:
+AI agents are becoming capable of calling tools and taking actions. For example:
 
 ```text
-Refund customer cus_456 $5000 because they complained. Their SSN is 123-45-6789.
+Refund this customer.
+Create a support ticket.
+Query customer data.
+Trigger a deployment rollback.
+Delete a user account.
+Send an email.
