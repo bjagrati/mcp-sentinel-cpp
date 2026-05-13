@@ -26,6 +26,7 @@ include_directories(include)
 add_executable(mcp_sentinel
     src/main.cpp
     src/config.cpp
+    src/agent_simulator.cpp
     src/tool_registry.cpp
     src/policy_engine.cpp
     src/redactor.cpp

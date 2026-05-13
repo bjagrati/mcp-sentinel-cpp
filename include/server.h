@@ -6,6 +6,7 @@
 #include "rate_limiter.h"
 #include "audit_logger.h"
 #include "approval_manager.h"
+#include "agent_simulator.h"
 
 class Server {
 public:
@@ -15,7 +16,8 @@ public:
         Redactor& redactor,
         RateLimiter& rateLimiter,
         AuditLogger& auditLogger,
-        ApprovalManager& approvalManager
+        ApprovalManager& approvalManager,
+        AgentSimulator& agentSimulator
     );
 
     void start(int port);
@@ -27,4 +29,5 @@ private:
     RateLimiter& rateLimiter_;
     AuditLogger& auditLogger_;
     ApprovalManager& approvalManager_;
+    AgentSimulator& agentSimulator_;
 };
