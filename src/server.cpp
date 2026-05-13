@@ -113,14 +113,16 @@ Server::Server(
     Redactor& redactor,
     RateLimiter& rateLimiter,
     AuditLogger& auditLogger,
-    ApprovalManager& approvalManager
+    ApprovalManager& approvalManager,
+    AgentSimulator& agentSimulator
 )
     : toolRegistry_(toolRegistry),
       policyEngine_(policyEngine),
       redactor_(redactor),
       rateLimiter_(rateLimiter),
       auditLogger_(auditLogger),
-      approvalManager_(approvalManager) {}
+      approvalManager_(approvalManager),
+      agentSimulator_(agentSimulator) {}
 
 void Server::start(int port) {
     httplib::Server server;
@@ -132,6 +134,125 @@ void Server::start(int port) {
         });
     });
 
+        server.Post("/agent/prompts", [this](const httplib::Request& req, httplib::Response& res) {
+        try {
+            json body = json::parse(req.body);
+
+            std::string userId = body.value("userId", "");
+            std::string role = body.value("role", "");
+            std::string prompt = body.value("prompt", "");
+
+            if (userId.empty() || role.empty() || prompt.empty()) {
+                sendJson(res, 400, {
+                    {"error", "userId, role, and prompt are required"}
+                });
+                return;
+            }
+
+            auto plan = agentSimulator_.createPlan(userId, role, prompt);
+
+            if (!plan.has_value()) {
+                sendJson(res, 400, {
+                    {"error", "Agent could not convert prompt into a supported tool call"},
+                    {"supportedIntents", {"refund_customer"}}
+                });
+                return;
+            }
+
+            ToolCallRequest request = plan->toolCallRequest;
+
+            auto tool = toolRegistry_.getTool(request.toolName);
+
+            if (!tool.has_value()) {
+                auditLogger_.log({
+                    request.userId,
+                    request.role,
+                    request.toolName,
+                    "DENY",
+                    "Tool not found"
+                });
+
+                sendJson(res, 404, {
+                    {"agentPlan", {
+                        {"intent", plan->intent},
+                        {"toolName", request.toolName},
+                        {"arguments", mapToJson(request.arguments)}
+                    }},
+                    {"gatewayDecision", {
+                        {"decision", "DENY"},
+                        {"reason", "Tool not found"}
+                    }}
+                });
+                return;
+            }
+
+            bool allowedByRateLimit = rateLimiter_.allow(request.userId, request.toolName);
+
+            if (!allowedByRateLimit) {
+                auditLogger_.log({
+                    request.userId,
+                    request.role,
+                    request.toolName,
+                    "DENY",
+                    "Rate limit exceeded"
+                });
+
+                sendJson(res, 429, {
+                    {"agentPlan", {
+                        {"intent", plan->intent},
+                        {"toolName", request.toolName},
+                        {"arguments", mapToJson(redactor_.redact(request.arguments))}
+                    }},
+                    {"gatewayDecision", {
+                        {"decision", "DENY"},
+                        {"reason", "Rate limit exceeded"}
+                    }}
+                });
+                return;
+            }
+
+            auto redactedArguments = redactor_.redact(request.arguments);
+
+            PolicyDecision decision = policyEngine_.evaluate(request, tool.value());
+
+            std::string approvalId;
+
+            if (decision.effect == PolicyEffect::REQUIRES_APPROVAL) {
+                approvalId = approvalManager_.createApproval(request);
+            }
+
+            auditLogger_.log({
+                request.userId,
+                request.role,
+                request.toolName,
+                policyEffectToString(decision.effect),
+                decision.reason
+            });
+
+            json gatewayDecision = {
+                {"decision", policyEffectToString(decision.effect)},
+                {"reason", decision.reason}
+            };
+
+            if (!approvalId.empty()) {
+                gatewayDecision["approvalId"] = approvalId;
+            }
+
+            sendJson(res, 200, {
+                {"agentPlan", {
+                    {"intent", plan->intent},
+                    {"toolName", request.toolName},
+                    {"arguments", mapToJson(redactedArguments)}
+                }},
+                {"gatewayDecision", gatewayDecision}
+            });
+        } catch (const std::exception& ex) {
+            sendJson(res, 400, {
+                {"error", ex.what()}
+            });
+        }
+    });
+    
     server.Post("/tools", [this](const httplib::Request& req, httplib::Response& res) {
         try {
             json body = json::parse(req.body);

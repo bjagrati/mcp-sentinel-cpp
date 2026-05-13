@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/agent_simulator.cpp" "CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/approval_manager.cpp" "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/audit_logger.cpp" "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o.d"
   "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/config.cpp" "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o" "gcc" "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o.d"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o"
+  "CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o"
   "CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o"

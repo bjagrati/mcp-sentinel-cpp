@@ -787,6 +787,7 @@ CMakeFiles/mcp_sentinel.dir/src/server.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/audit_logger.h \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/approval_manager.h \
+  /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/include/agent_simulator.h \
   /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-src/httplib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arpa/inet.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/netinet/in.h \

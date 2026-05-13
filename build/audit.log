@@ -1,0 +1,3 @@
+{"timestamp":"2026-05-13T15:40:26Z","userId":"user_123","role":"support_agent","toolName":"refund_payment","decision":"REQUIRES_APPROVAL","reason":"Amount exceeds role policy limit"}
+{"timestamp":"2026-05-13T15:40:36Z","userId":"user_123","role":"support_agent","toolName":"refund_payment","decision":"REQUIRES_APPROVAL","reason":"Amount exceeds role policy limit"}
+{"timestamp":"2026-05-13T15:41:20Z","userId":"user_123","role":"support_agent","toolName":"refund_payment","decision":"REQUIRES_APPROVAL","reason":"Amount exceeds role policy limit"}

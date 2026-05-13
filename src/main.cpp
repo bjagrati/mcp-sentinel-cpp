@@ -7,6 +7,7 @@
 #include "approval_manager.h"
 #include "server.h"
 #include "config.h"
+#include "agent_simulator.h"
 
 #include <iostream>
 
@@ -19,6 +20,7 @@ int main() {
     RateLimiter rateLimiter(3, 60);
     AuditLogger auditLogger(config.auditLogPath);
     ApprovalManager approvalManager;
+    AgentSimulator agentSimulator;
 
     Tool refundTool;
     refundTool.name = "refund_payment";
@@ -43,12 +45,13 @@ int main() {
     std::cout << "Seeded default policy: support_agent can refund up to 2500" << std::endl;
 
     Server server(
-        toolRegistry,
-        policyEngine,
-        redactor,
-        rateLimiter,
-        auditLogger,
-        approvalManager
+    toolRegistry,
+    policyEngine,
+    redactor,
+    rateLimiter,
+    auditLogger,
+    approvalManager,
+    agentSimulator
     );
 
     server.start(config.port);

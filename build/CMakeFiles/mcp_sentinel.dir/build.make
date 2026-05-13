@@ -100,10 +100,24 @@ CMakeFiles/mcp_sentinel.dir/src/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mcp_sentinel.dir/src/config.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/config.cpp" -o CMakeFiles/mcp_sentinel.dir/src/config.cpp.s
 
+CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
+CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/agent_simulator.cpp
+CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/agent_simulator.cpp"
+
+CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/agent_simulator.cpp" > CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.i
+
+CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/agent_simulator.cpp" -o CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.s
+
 CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/tool_registry.cpp
 CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/tool_registry.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/policy_engine.cpp
 CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/policy_engine.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/redactor.cpp
 CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/redactor.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/rate_limiter.cpp
 CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/rate_limiter.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/audit_logger.cpp
 CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/audit_logger.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/mcp_sentinel.dir/src/audit_logger.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/approval_manager.cpp
 CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/approval_manager.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/mcp_sentinel.dir/src/approval_manager.cpp.s: cmake_force
 CMakeFiles/mcp_sentinel.dir/src/server.cpp.o: CMakeFiles/mcp_sentinel.dir/flags.make
 CMakeFiles/mcp_sentinel.dir/src/server.cpp.o: /Users/deepankardixit/Desktop/Jagrati/AI\ Projects/mcp-sentinel-cpp/src/server.cpp
 CMakeFiles/mcp_sentinel.dir/src/server.cpp.o: CMakeFiles/mcp_sentinel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mcp_sentinel.dir/src/server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mcp_sentinel.dir/src/server.cpp.o -MF CMakeFiles/mcp_sentinel.dir/src/server.cpp.o.d -o CMakeFiles/mcp_sentinel.dir/src/server.cpp.o -c "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/src/server.cpp"
 
 CMakeFiles/mcp_sentinel.dir/src/server.cpp.i: cmake_force
@@ -202,6 +216,7 @@ CMakeFiles/mcp_sentinel.dir/src/server.cpp.s: cmake_force
 mcp_sentinel_OBJECTS = \
 "CMakeFiles/mcp_sentinel.dir/src/main.cpp.o" \
 "CMakeFiles/mcp_sentinel.dir/src/config.cpp.o" \
+"CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o" \
 "CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o" \
 "CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o" \
 "CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o" \
@@ -215,6 +230,7 @@ mcp_sentinel_EXTERNAL_OBJECTS =
 
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/main.cpp.o
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/config.cpp.o
+mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/policy_engine.cpp.o
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o
@@ -231,7 +247,7 @@ mcp_sentinel: /opt/homebrew/lib/libzstd.1.5.7.dylib
 mcp_sentinel: /opt/homebrew/lib/libssl.dylib
 mcp_sentinel: /opt/homebrew/lib/libcrypto.dylib
 mcp_sentinel: CMakeFiles/mcp_sentinel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable mcp_sentinel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable mcp_sentinel"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mcp_sentinel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -194,6 +194,30 @@ mcp_sentinel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/build
 .PHONY : mcp_sentinel/fast
 
+src/agent_simulator.o: src/agent_simulator.cpp.o
+.PHONY : src/agent_simulator.o
+
+# target to build an object file
+src/agent_simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.o
+.PHONY : src/agent_simulator.cpp.o
+
+src/agent_simulator.i: src/agent_simulator.cpp.i
+.PHONY : src/agent_simulator.i
+
+# target to preprocess a source file
+src/agent_simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.i
+.PHONY : src/agent_simulator.cpp.i
+
+src/agent_simulator.s: src/agent_simulator.cpp.s
+.PHONY : src/agent_simulator.s
+
+# target to generate assembly for a file
+src/agent_simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcp_sentinel.dir/build.make CMakeFiles/mcp_sentinel.dir/src/agent_simulator.cpp.s
+.PHONY : src/agent_simulator.cpp.s
+
 src/approval_manager.o: src/approval_manager.cpp.o
 .PHONY : src/approval_manager.o
 
@@ -425,6 +449,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... mcp_sentinel"
+	@echo "... src/agent_simulator.o"
+	@echo "... src/agent_simulator.i"
+	@echo "... src/agent_simulator.s"
 	@echo "... src/approval_manager.o"
 	@echo "... src/approval_manager.i"
 	@echo "... src/approval_manager.s"

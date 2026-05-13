@@ -34,3 +34,12 @@ Build and run:
 
 ```bash
 docker compose up --build
+
+## Phase 4: AI Agent Prompt Simulator
+
+MCP Sentinel now includes an AI-agent simulation layer.
+
+Instead of calling the gateway directly with structured JSON, a user can send a natural language prompt:
+
+```text
+Refund customer cus_456 $5000 because they complained. Their SSN is 123-45-6789.
