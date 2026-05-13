@@ -1,0 +1,16 @@
+#pragma once
+
+#include "models.h"
+#include <string>
+#include <mutex>
+
+class AuditLogger {
+public:
+    explicit AuditLogger(const std::string& filePath);
+
+    void log(const AuditEvent& event);
+
+private:
+    std::string filePath_;
+    std::mutex mutex_;
+};
