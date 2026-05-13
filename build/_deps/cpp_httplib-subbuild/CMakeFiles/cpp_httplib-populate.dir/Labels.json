@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/cpp_httplib-populate"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/cpp_httplib-populate.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/cpp_httplib-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-build.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-download.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-install.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-test.rule"
+		},
+		{
+			"file" : "/Users/deepankardixit/Desktop/Jagrati/AI Projects/mcp-sentinel-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/cpp_httplib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpp_httplib-populate"
+		],
+		"name" : "cpp_httplib-populate"
+	}
+}
