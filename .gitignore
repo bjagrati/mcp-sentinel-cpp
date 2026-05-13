@@ -1,0 +1,5 @@
+build/
+logs/
+audit.log
+.vscode/
+.DS_Store

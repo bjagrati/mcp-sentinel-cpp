@@ -1,1 +1,0 @@
-{"timestamp":"2026-05-13T15:12:07Z","userId":"user_123","role":"support_agent","toolName":"refund_payment","decision":"REQUIRES_APPROVAL","reason":"Amount exceeds role policy limit"}
