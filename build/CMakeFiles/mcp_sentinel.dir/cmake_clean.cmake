@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcp_sentinel.dir/src/rate_limiter.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o"
   "CMakeFiles/mcp_sentinel.dir/src/redactor.cpp.o.d"
+  "CMakeFiles/mcp_sentinel.dir/src/server.cpp.o"
+  "CMakeFiles/mcp_sentinel.dir/src/server.cpp.o.d"
   "CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o"
   "CMakeFiles/mcp_sentinel.dir/src/tool_registry.cpp.o.d"
   "mcp_sentinel"
